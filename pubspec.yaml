@@ -1,0 +1,87 @@
+name: mush_app
+description: "دليل الشحر المكلا - دليل الخدمات العامة في الشحر والمكلا"
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.3.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_localizations:
+    sdk: flutter
+
+  # Backend - Supabase
+  supabase_flutter: ^2.8.4
+
+  # State Management
+  flutter_riverpod: ^2.6.1
+  riverpod_annotation: ^2.6.1
+
+  # Navigation
+  go_router: ^14.8.1
+
+  # UI Components
+  flutter_svg: ^2.0.10+1
+  cached_network_image: ^3.4.1
+  shimmer: ^3.0.0
+  lottie: ^3.3.1
+  carousel_slider: ^5.0.0
+  flutter_staggered_grid_view: ^0.7.0
+  smooth_page_indicator: ^1.2.0+3
+
+  # Forms & Validation
+  flutter_form_builder: ^10.3.0+2
+  form_builder_validators: ^11.1.2
+
+  # Image Handling
+  image_picker: ^1.1.2
+  flutter_image_compress: ^2.3.0
+
+  # Utilities
+  intl: ^0.20.2
+  shared_preferences: ^2.3.5
+  connectivity_plus: ^6.1.4
+  url_launcher: ^6.3.1
+  timeago: ^3.7.0
+
+  # Fonts & Icons
+  google_fonts: ^6.2.1
+  flutter_animate: ^4.5.0
+
+  cupertino_icons: ^1.0.8
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^5.0.0
+  build_runner: ^2.4.14
+  riverpod_generator: ^2.6.3
+  json_serializable: ^6.9.0
+  flutter_launcher_icons: ^0.14.4
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/images/
+    - assets/images/team/
+    - assets/icons/
+    - assets/lottie/
+
+flutter_launcher_icons:
+  android: true
+  ios: false
+  image_path: "assets/icons/logo2.png"
+  min_sdk_android: 21
+  # fonts:
+  #   - family: Cairo
+  #     fonts:
+  #       - asset: assets/fonts/Cairo-Regular.ttf
+  #         weight: 400
+  #       - asset: assets/fonts/Cairo-Medium.ttf
+  #         weight: 500
+  #       - asset: assets/fonts/Cairo-SemiBold.ttf
+  #         weight: 600
+  #       - asset: assets/fonts/Cairo-Bold.ttf
+  #         weight: 700
