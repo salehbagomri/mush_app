@@ -195,36 +195,25 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
             children: [
               const SizedBox(height: 12),
 
-              // الشعار
+              // الشعار الرسمي للتطبيق
               Container(
                 width: 135,
                 height: 135,
                 decoration: BoxDecoration(
-                  color: const Color(0xFF1B2433),
                   borderRadius: BorderRadius.circular(32),
                   boxShadow: [
                     BoxShadow(
-                      color: Colors.black.withValues(alpha: 0.14),
-                      blurRadius: 18,
+                      color: AppColors.primary.withValues(alpha: 0.2),
+                      blurRadius: 20,
                       offset: const Offset(0, 8),
                     ),
                   ],
                 ),
-                child: Center(
-                  child: Container(
-                    width: 98,
-                    height: 98,
-                    decoration: const BoxDecoration(
-                      color: Color(0xFFF7A747),
-                      shape: BoxShape.circle,
-                    ),
-                    child: const Center(
-                      child: Icon(
-                        Icons.navigation_rounded,
-                        size: 50,
-                        color: Color(0xFF1B2433),
-                      ),
-                    ),
+                child: ClipRRect(
+                  borderRadius: BorderRadius.circular(32),
+                  child: Image.asset(
+                    'assets/icons/logo1.png',
+                    fit: BoxFit.contain,
                   ),
                 ),
               )
